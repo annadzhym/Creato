@@ -1,0 +1,22 @@
+section {
+    height: 1600px;
+    border-bottom: 5px solid darkred;
+    background: #020407;
+    color: black;
+}
+
+.header {
+    background: url("../img/bg.jpeg");
+    height: 831px;
+}
+
+.group {
+    display: flex;
+    list-style: none;
+    width: 450px;
+    justify-content: space-between;
+}
+
+.pictures__el {
+    float: left;
+}
