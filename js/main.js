@@ -1,38 +1,29 @@
 'use strict';
 
 (function ($) {
-    // var elem = document.querySelector('.pictures');
-    // var iso = new Isotope( elem, {
-    //     itemSelector: '.pictures-el',
-    //     layoutMode: 'fitRows'
-    // });
-
-    //
-    // $('.pictures').isotope({
-    //     itemSelector: '.grid-item',
-    //     layoutMode: 'fitRows',
-    //     masonry: {
-    //         columnWidth: 200
-    //     }
-    // });
-
-
-
-
-    var $pictures = $('.pictures').isotope({
-        itemSelector: '.pictures__el',
-        layoutMode: 'fitRows'
+    $('.menu__nav--el, .menu__title').click(function (e) {
+        e.preventDefault();
+        var target = $(this.hash);
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000)
     });
 
-    $pictures.isotope({filter: '.product'});
-    $pictures.isotope({filter: '.abstract'});
-    $pictures.isotope({filter: '.weeding'});
-    $pictures.isotope({filter: '.landscape'});
-    $pictures.isotope({filter: '.*'});
+    var $pictures = $('.portfolio__pictures').isotope({
+        itemSelector: '.portfolio__pictures--el',
+        masonry: {
+            columnWidth: '.grid-sizer',
+            horizontalOrder: true,
+            percentPosition: true,
+            gutter: 5
+        }
+    });
 
-    $('.filter-button-group').on( 'click', 'button', function() {
+    $('.portfolio__group').on( 'click', 'button', function() {
         var filterValue = $(this).attr('data-filter');
         $pictures.isotope({ filter: filterValue });
+        $('.portfolio__group').find('.portfolio__group--active').removeClass('portfolio__group--active');
+        $( this ).addClass('portfolio__group--active');
     });
 
 })(jQuery);

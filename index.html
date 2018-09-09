@@ -3,64 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <title>CREATO</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,300i,400,600,700,800i" rel="stylesheet">
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-    <nav>
-        <a href="#">Wellcome</a>
-        <a href="#">about</a>
-        <a href="#">services</a>
-        <a href="#">portfolio</a>
-        <a href="#">testimonial</a>
-        <a href="#">contact</a>
-    </nav>
-</header>
-<section class="about">
+<header class="header" id="header">
     <div class="container">
-
+        <div class="menu">
+            <div class="menu__content">
+                <a href="#footer"><img src="img/logo.svg"></a>
+                    <nav class="menu__nav">
+                    <a href="#header" class="menu__nav--el">welcome</a>
+                    <a href="#about" class="menu__nav--el">about</a>
+                    <a href="#services" class="menu__nav--el">services</a>
+                    <a href="#portfolio" class="menu__nav--el">Portfolio</a>
+                    <a href="#testimonial" class="menu__nav--el">Testimonial</a>
+                    <a href="#contact" class="menu__nav--el">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="header__flex">
+                <div class="header__flex--left">
+                    <img class="header__flex--img" src="img/man1.png">
+                </div>
+                <div class="header__flex--right">
+                    <h1 class="header__content--title">creativity comes first</h1>
+                    <p class="header__content--text">Thinking about overseas adventure travel? Have you put any
+                        thought into the best places to go when it comes.
+                    </p>
+                    <a href="#header" class="header__content--link">Discover more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="about__title">about</h2>
+        <div class="about__content">
+            <div class="about__content--text">
+                <p class="about__content--info">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                    et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                    duis dolore te feugait nulla facilisi.
+                </p>
+                <a href="#header" class="about__content--link">Read more</a>
+            </div>
+            <div class="about__content--img"><img src="img/man2.png" alt="man2"></div>
+        </div>
     </div>
 </section>
+
 <section class="services">
     <div class="container">
+        <div class="services__content">
+            <h2 class="services__title">services</h2>
+            <div class="services__flex">
+                <div class="services__flex--title">
+                    <img src="img/border.png">
+                    <h4>Creative</h4>
+                </div>
+                <p class="services__flex--text">Mirum est notare quam littera gothica
+                    nunc putamus parum claram.
+                </p>
+                <a href="#header" class="services__flex--link">Learn more</a>
+            </div>
 
-    </div>
-</section>
-<section class="portfolio" id="works">
-    <div class="container">
-        <div class="group filter-button-group">
-            <button data-filter="*">all</button>
-            <button data-filter=".abstract">Abstract</button>
-            <button data-filter=".weeding">weeding</button>
-            <button data-filter=".product">product</button>
-            <button data-filter=".landscape">landscape</button>
+            <div class="services__flex">
+                <div class="services__flex--title">
+                    <img src="img/camera.png">
+                    <h4>Proffessional</h4>
+                </div>
+                <p class="services__flex--text">Claritas est etiam processus dynamicus
+                    sequitur mutationem consuetudium.
+                </p>
+                <a href="#header" class="services__flex--link">Learn more</a>
+            </div>
+
+            <div class="services__flex">
+                <div class="services__flex--title">
+                    <img src="img/wallet.png">
+                    <h4>Money Saving</h4>
+                </div>
+                <p class="services__flex--text">Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming.
+                </p>
+                <a href="#header" class="services__flex--link">Learn more</a>
+            </div>
+
         </div>
+    </div>
+</section>
 
-        <div class="pictures">
-            <div class="pictures__el product"><img class="product" src="img/1.jpeg" alt="picture"></div>
-            <div class="pictures__el weeding"><img src="img/2.jpeg" alt="picture"></div>
-            <div class="pictures__el abstract"><img src="img/3.jpeg" alt="picture"></div>
-            <div class="pictures__el abstract"><img src="img/4.jpeg" alt="picture"></div>
-            <div class="pictures__el product"><img src="img/5.jpeg" alt="picture"></div>
-            <div class="pictures__el landscape"><img src="img/6.jpeg" alt="picture"></div>
+<section class="portfolio" id="portfolio">
+    <h2 class="portfolio__title">works</h2>
+        <div class="portfolio__group">
+            <button class="portfolio__group--button portfolio__group--active" data-filter="*">All</button>
+            <button class="portfolio__group--button" data-filter=".abstract">Abstract</button>
+            <button class="portfolio__group--button" data-filter=".weeding">Weeding</button>
+            <button class="portfolio__group--button" data-filter=".product">Product</button>
+            <button class="portfolio__group--button" data-filter=".landscape">Landscape</button>
         </div>
+        <div class="portfolio__pictures">
+            <div class="grid-sizer"></div>
+            <div class="portfolio__pictures--el portfolio__pictures--45 product"><img src="img/1.jpeg" alt="picture"></div>
+            <div class="portfolio__pictures--el portfolio__pictures--50 weeding"><img src="img/2.jpeg" alt="picture"></div>
+            <div class="portfolio__pictures--el portfolio__pictures--50 portfolio__pictures--long abstract"><img src="img/3.jpeg" alt="picture"></div>
+            <div class="portfolio__pictures--el portfolio__pictures--55 abstract"><img src="img/4.jpeg" alt="picture"></div>
+            <div class="portfolio__pictures--el portfolio__pictures--50 portfolio__pictures--long product"><img src="img/5.jpeg" alt="picture"></div>
+            <div class="portfolio__pictures--el portfolio__pictures--50 landscape"><img src="img/6.jpeg" alt="picture"></div>
+        </div>
+</section>
 
+<section class="testimonial" id="testimonial">
+    <div class="container">
+        <h2 class="testimonial__title">speech</h2>
+        <div class="testimonial__content">
+            <div class="testimonial__content--img"><img src="img/man3.png" alt="man3"></div>
+            <div class="testimonial__content--text">
+                <p class="testimonial__content--info">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                    eros et accumsan et iusto odio dignissim qui blandit praesent zzril
+                    delenit augue duis dolore te feugait nulla facilisi.
+                </p>
+                <span class="testimonial__content--author">David Ramon</span>
+            </div>
+        </div>
     </div>
 </section>
-<section class="testimonial">
+
+<section>
     <div class="container">
+        <div class="logo">
+            <img src="img/hipster.png" alt="hipster">
+            <img src="img/miller.png" alt="miller">
+            <img src="img/hipster.png" alt="hipster">
+            <img src="img/miller.png" alt="miller">
+            <img src="img/hipster.png" alt="hipster">
+            <img src="img/miller.png" alt="miller">
+        </div>
     </div>
 </section>
-<footer class="contact">
-    <div class="container">
 
-    </div>
-</footer>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

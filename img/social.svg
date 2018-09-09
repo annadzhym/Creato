@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="201px" height="16px" viewBox="0 0 201 16">
+<style type="text/css"><![CDATA[
+.style0 {
+  font-size: 16px;
+  font-family: "FontAwesome";
+  fill: rgb(255,255,255);
+}
+.style1 {
+  font-size: 16px;
+  font-family: "FontAwesome";
+  fill: rgb(40,102,189);
+}
+]]></style>
+<text transform="translate(200.00,14.00)"><tspan x="-147.77 -138.49 -124.48 -115.20" fill="rgb(255,255,255)" class="style0">      </tspan><tspan x="-101.18" fill="rgb(39,101,188)" class="style1"></tspan><tspan x="-91.90 -87.23 -82.56 -77.89 -68.61 -63.93 -59.26 -54.59 -45.31 -40.64 -35.97 -31.30 -22.02 -17.34 -12.67 -8.00" fill="rgb(255,255,255)" class="style0">            </tspan></text></svg>
