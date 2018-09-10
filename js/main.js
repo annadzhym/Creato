@@ -1,7 +1,7 @@
 'use strict';
 
 (function ($) {
-    $('.menu__nav--el, .menu__title').click(function (e) {
+    $('.menu__nav--el, .menu__title, .header__content--link, .about__content--link, .footer__scroll, .services__flex--link').click(function (e) {
         e.preventDefault();
         var target = $(this.hash);
         $('html, body').animate({

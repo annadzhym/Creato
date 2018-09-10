@@ -5,7 +5,7 @@ body {
 }
 .container {
     margin: 0 auto;
-    padding: 65px 0 0;
+    padding: 65px 0 30px;
     width: 84%;
 }
 
@@ -379,11 +379,177 @@ body {
     position: inherit;
 }
 
-.logo {
-    padding: 7% 0;
+.logos {
+    padding: 7% 0 0;
     display: flex;
     justify-content: space-around;
 }
+
+
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.contact__content--left {
+    background: url("../img/girl.png") 50%;
+    background-size: cover;
+    width: 40%;
+}
+
+.contact__content--titles {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px
+}
+
+.contact__content--info {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.contact__content--right {
+    width: 60%;
+}
+
+.contact__column {
+    height: 300px;
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact__column--title {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 26px;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.contact__column--title:before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: -23%;
+    border-bottom: 1px solid white;
+    width: 16%;
+}
+
+.contact__column--form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact__column--input {
+    color:  #525252;
+    font-size: 16px;
+    font-weight: 300;
+    width: 70%;
+    border: none;
+    border-bottom: 0.03em solid #525252;
+    padding: 2%;
+    background: transparent;
+}
+
+.contact__column--input:focus {
+    outline: none;
+    color:  #2866bd;
+    border-color: #2866bd;
+}
+
+.contact__column--message {
+    height: 100px;
+}
+.contact__column--message::-webkit-scrollbar {
+    width: 0.7%;
+    background-color: transparent;
+}
+
+.contact__column--message::-webkit-scrollbar-thumb {
+    background-color: #2866bd;
+}
+
+.contact__column--message::-webkit-scrollbar-thumb:hover {
+     background-color: #ef4836;
+    cursor: pointer;
+ }
+
+.contact__column--button {
+    color:  #ef4836;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 66px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.contact__column--button:hover {
+    color: #2866bd;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__content--left {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+}
+
+.footer__content--right {
+    width: 25%;
+}
+
+.footer__links--img {
+    background: url("../img/social.png") no-repeat top left;
+    height: 17px;
+    width: 27px;
+    display: inline-flex;
+    padding: 1%;
+}
+
+.footer__links--img:hover {
+    border-bottom: 0.1em solid #2866bd;
+}
+
+.footer__links--fb {
+     background-position: 8px 0;
+}
+
+.footer__links--twitter {
+     background-position: -20px 0;
+ }
+
+.footer__links--behance {
+     background-position: -54px 0;
+ }
+
+.footer__links--flickr {
+    background-position: -87px 0;
+}
+
+.footer__links--instagram {
+     background-position: -118px 0;
+ }
+.footer__links--dribbble {
+    background-position: -150px 0;
+}
+.footer__links--pinterest {
+    background-position: -180px 0;
+}
+
 
 
 
